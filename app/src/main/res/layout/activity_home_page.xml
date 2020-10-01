@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainAboutUs">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_grey_200"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/minimumEditText3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/layout_border"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="Search ..."
+                android:inputType="text"
+                android:padding="@dimen/space_8"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size"
+                app:layout_constraintEnd_toStartOf="@+id/filterTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/promotionImageView"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/minimumEditText3"
+                app:srcCompat="@drawable/baseline_image_black_24" />
+
+            <ImageView
+                android:id="@+id/gradientImageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="@+id/promotionImageView"
+                app:layout_constraintEnd_toEndOf="@+id/promotionImageView"
+                app:layout_constraintStart_toStartOf="@+id/promotionImageView"
+                app:layout_constraintTop_toTopOf="@+id/promotionImageView"
+                tools:srcCompat="@drawable/banner" />
+
+            <ImageView
+                android:id="@+id/institutionImageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tutorImageView"
+                app:layout_constraintTop_toBottomOf="@+id/booksImageView"
+                tools:srcCompat="@drawable/baseline_image_black_24" />
+
+            <ImageView
+                android:id="@+id/booksImageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/stationaryImageView"
+                app:layout_constraintTop_toBottomOf="@+id/promotionImageView"
+                tools:srcCompat="@drawable/baseline_image_black_24" />
+
+            <ImageView
+                android:id="@+id/tutorImageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@+id/institutionImageView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stationaryImageView"
+                tools:srcCompat="@drawable/baseline_image_black_24" />
+
+            <ImageView
+                android:id="@+id/stationaryImageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@+id/booksImageView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/promotionImageView"
+                tools:srcCompat="@drawable/baseline_image_black_24" />
+
+            <TextView
+                android:id="@+id/textView290"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Promtion Posts Here"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintBottom_toTopOf="@+id/textView291"
+                app:layout_constraintStart_toStartOf="@+id/gradientImageView" />
+
+            <TextView
+                android:id="@+id/filterTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Filter"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_body_size"
+                app:layout_constraintBottom_toBottomOf="@+id/minimumEditText3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/minimumEditText3" />
+
+            <TextView
+                android:id="@+id/textView291"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/roboto"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis rhoncus mattis. "
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/font_body_size"
+                app:layout_constraintBottom_toBottomOf="@+id/gradientImageView"
+                app:layout_constraintEnd_toEndOf="@+id/promotionImageView"
+                app:layout_constraintStart_toStartOf="@+id/gradientImageView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

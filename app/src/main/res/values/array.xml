@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="fruits">
+        <item>Apple</item>
+        <item>Banana</item>
+        <item>Cherry</item>
+        <item>Date</item>
+        <item>Guava</item>
+        <item>Kiwi</item>
+        <item>Lime</item>
+        <item>Mango</item>
+        <item>Orange</item>
+        <item>a</item>
+        <item>ab</item>
+        <item>abc</item>
+        <item>bcs</item>
+        <item>def</item>
+    </array>
+
+</resources>

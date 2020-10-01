@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/chats"
+        android:icon="@drawable/baseline_chat_bubble_outline_white_24"
+        android:title="Chat"
+        app:showAsAction="always|withText"
+
+        />
+    <item
+        android:id="@+id/calls"
+        android:icon="@drawable/baseline_phone"
+        android:title="Calls"
+        app:showAsAction="always|withText"
+
+        />
+    <item
+        android:id="@+id/contacts"
+        android:icon="@drawable/baseline_people_black_24"
+        android:title="Contacts"
+        app:showAsAction="always|withText"
+
+        />
+
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/baseline_more_horizontal_24"
+        android:title="More"
+        app:showAsAction="always|withText"
+
+        />
+
+</menu>

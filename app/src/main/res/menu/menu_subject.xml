@@ -1,0 +1,14 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_menu_2"
+        android:icon="@drawable/baseline_subject_black_24"
+        android:iconTint="@color/md_white_1000"
+        android:iconTintMode="multiply"
+        android:orderInCategory="100"
+        android:title="Filter"
+        app:showAsAction="always" />
+
+</menu>

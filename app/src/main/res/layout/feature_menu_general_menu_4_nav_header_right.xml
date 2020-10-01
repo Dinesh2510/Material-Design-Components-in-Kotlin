@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_800"
+    android:gravity="bottom"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:id="@+id/drawer"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="32dp"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/drawerLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/homeImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:onClick="onMenuClicked"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_call"
+                    android:tint="@color/md_grey_600" />
+
+                <ImageView
+                    android:id="@+id/announceImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:onClick="onMenuClicked"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_call"
+                    android:tint="@color/md_grey_600" />
+
+                <ImageView
+                    android:id="@+id/progressImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:onClick="onMenuClicked"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_call"
+                    android:tint="@color/md_grey_600" />
+
+                <ImageView
+                    android:id="@+id/clockImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:onClick="onMenuClicked"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_clock_black_24"
+                    android:tint="@color/md_grey_600" />
+
+                <ImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:onClick="onMenuClicked"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_call"
+                    app:tint="@color/md_grey_600" />
+
+                <ImageView
+                    android:id="@+id/infoImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:onClick="onMenuClicked"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_call"
+                    app:tint="@color/md_grey_600" />
+
+                <ImageView
+                    android:id="@+id/settingImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:onClick="onMenuClicked"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_setting_black_24"
+                    android:tint="@color/md_grey_600" />
+
+                <ImageView
+                    android:id="@+id/powerImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:onClick="onMenuClicked"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_call"
+                    app:tint="@color/md_grey_600" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

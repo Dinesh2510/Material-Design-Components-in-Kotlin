@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeMenu"
+        android:icon="@drawable/bookmarks"
+        android:title="Bookmark"
+        />
+    <item
+        android:id="@+id/categoryMenu"
+        android:icon="@drawable/baseline_map_view_grey_24"
+        android:title="Map"
+        />
+    <item
+        android:id="@+id/saveMenu"
+        android:icon="@drawable/baseline_setting_24"
+        android:title="Setting"
+        />
+
+    <item
+        android:id="@+id/mailMenu"
+        android:icon="@drawable/baseline_chat_bubbles_white_24"
+        android:title="Chat"
+        />
+
+    <item
+        android:id="@+id/profileMenu"
+        android:icon="@drawable/ic_baseline_camera_alt_24"
+        android:title="camera"
+        />
+</menu>

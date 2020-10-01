@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_16"
+            android:layout_marginRight="@dimen/space_16"
+            android:orientation="vertical"
+            android:padding="@dimen/space_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_marginTop="@dimen/space_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Checked TextView"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size"
+                    android:textStyle="bold"
+                    tools:textColor="@color/colorTextLight" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLine" />
+
+            </LinearLayout>
+
+            <CheckedTextView
+                android:id="@+id/checkedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_marginTop="@dimen/space_8"
+                android:checkMark="@drawable/baseline_check_box_outline_blank_black_24"
+                android:drawablePadding="@dimen/space_8"
+                android:fontFamily="@font/roboto"
+                android:text="Checked TextView"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_title_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_marginTop="@dimen/space_32"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="AutoComplete TextView"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size"
+                    android:textStyle="bold"
+                    tools:textColor="@color/colorTextLight" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLine" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_8"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:fontFamily="@font/roboto"
+                    android:hint="AutoComplete TextView"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size" />
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/multiAutoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_8"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:fontFamily="@font/roboto"
+                    android:hint="MultiLine AutoComplete TextView"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_marginTop="@dimen/space_32"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="AutoComplete TextView with Left Icon"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size"
+                    android:textStyle="bold"
+                    tools:textColor="@color/colorTextLight" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLine" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteLeftIconTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_8"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:drawableLeft="@drawable/ic_done"
+                    android:drawablePadding="@dimen/space_8"
+                    android:drawableStart="@drawable/ic_done"
+                    android:fontFamily="@font/roboto"
+                    android:hint="AutoComplete TextView"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size" />
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/multiAutoCompleteLeftIconTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_8"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:drawableLeft="@drawable/baseline_phone_black_24"
+                    android:drawablePadding="@dimen/space_8"
+                    android:drawableStart="@drawable/baseline_phone_black_24"
+                    android:fontFamily="@font/roboto"
+                    android:hint="MultiLine AutoComplete TextView"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_marginTop="@dimen/space_32"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="AutoComplete TextView with Right Icon"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size"
+                    android:textStyle="bold"
+                    tools:textColor="@color/colorTextLight" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLine" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteRightIconTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_8"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:drawableEnd="@drawable/baseline_call"
+                    android:drawablePadding="@dimen/space_8"
+                    android:drawableRight="@drawable/baseline_pay_later_24"
+                    android:fontFamily="@font/roboto"
+                    android:hint="AutoComplete TextView"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size" />
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/multiAutoCompleteRightIconTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_8"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:drawableEnd="@drawable/baseline_phone_black_24"
+                    android:drawablePadding="@dimen/space_8"
+                    android:drawableRight="@drawable/baseline_phone_black_24"
+                    android:fontFamily="@font/roboto"
+                    android:hint="MultiLine AutoComplete TextView"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

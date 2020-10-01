@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_32"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="Please select Date"
+        android:textColor="@color/colorTextLight"
+        android:textSize="@dimen/font_title_size"
+        android:textStyle="bold"
+        tools:text="18 Sep 2020" />
+
+    <Button
+        android:id="@+id/getDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_32"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="@dimen/space_8"
+        android:paddingStart="@dimen/space_16"
+        android:paddingEnd="@dimen/space_16"
+        android:text="Open Date Picker"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/font_body_size" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_32"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="Please select Date"
+        android:textColor="@color/colorTextLight"
+        android:textSize="@dimen/font_title_size"
+        android:textStyle="bold"
+        tools:text="11:10pm" />
+
+    <Button
+        android:id="@+id/getTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_32"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="@dimen/space_8"
+        android:paddingStart="@dimen/space_16"
+        android:paddingEnd="@dimen/space_16"
+        android:text="Open Time Picker"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/font_body_size" />
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_chat_bubbles_white_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/baseline_chat_bubbles_white_24"
+            android:title="Categories" />
+    </group>
+
+    <item android:title="News Related">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_feature"
+                    android:icon="@drawable/baseline_chat_bubbles_white_24"
+                    android:title="Featured News" />
+                <item
+                    android:id="@+id/nav_popular"
+                    android:icon="@drawable/baseline_chat_bubbles_white_24"
+                    android:title="Popular News" />
+                <item
+                    android:id="@+id/nav_recent"
+                    android:icon="@drawable/baseline_chat_bubbles_white_24"
+                    android:title="Recent News" />
+                <item
+                    android:id="@+id/nav_search"
+                    android:icon="@drawable/baseline_chat_bubbles_white_24"
+                    android:title="Search News" />
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="User Info">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/baseline_call"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/nav_favourite"
+                    android:icon="@drawable/baseline_chat_bubbles_white_24"
+                    android:title="Favourite" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/baseline_chat_bubbles_white_24"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="App">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_about_us"
+                    android:icon="@drawable/baseline_chat_bubbles_white_24"
+                    android:title="About Us" />
+                <item
+                    android:id="@+id/nav_contact_us"
+                    android:icon="@drawable/baseline_chat_bubbles_white_24"
+                    android:title="Contact Us" />
+                <item
+                    android:id="@+id/nav_setting"
+                    android:icon="@drawable/baseline_setting_black_24"
+                    android:title="Setting" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

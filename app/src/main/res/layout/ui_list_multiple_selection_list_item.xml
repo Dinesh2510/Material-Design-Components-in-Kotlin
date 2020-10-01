@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/holderCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_gravity="center">
+
+
+    <ImageView
+        android:id="@+id/userImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/baseline_image_black_24" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Chris"
+        android:textAlignment="viewStart"
+        android:textColor="@color/md_grey_800"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/timeTextView"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toEndOf="@+id/userImageView"
+        app:layout_constraintTop_toTopOf="@+id/userImageView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/messageTextView"
+        app:layout_constraintTop_toBottomOf="@+id/timeTextView"
+        app:layout_constraintVertical_bias="0.2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/messagecount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/md_orange_A700"
+                android:fontFamily="@font/roboto"
+                android:maxLength="2"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/md_white_1000"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Sep 4, 2017"
+        android:textAlignment="viewStart"
+        android:textColor="@color/md_grey_600"
+        android:textSize="@dimen/font_body_s_size"
+        app:layout_constraintBottom_toBottomOf="@+id/userNameTextView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto"
+        android:maxLines="2"
+        android:text="@string/dummy_small_text"
+        android:textAlignment="viewStart"
+        android:textColor="@color/md_grey_600"
+        android:textSize="@dimen/font_body_size"
+        app:layout_constraintBottom_toTopOf="@+id/view81"
+        app:layout_constraintEnd_toStartOf="@+id/timeTextView"
+        app:layout_constraintStart_toEndOf="@+id/userImageView"
+        app:layout_constraintTop_toBottomOf="@+id/userNameTextView" />
+
+    <View
+        android:id="@+id/view81"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/checkImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_done"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/userImageView"
+        app:layout_constraintEnd_toEndOf="@+id/userImageView"
+        app:layout_constraintStart_toStartOf="@+id/userImageView"
+        app:layout_constraintTop_toTopOf="@+id/userImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kotlindemoapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_kt"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_kt"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.Forms.RegisterActivity"/>
+        <activity android:name=".Activities.Forms.LoginActivity" />
+        <activity android:name=".Activities.PostList" />
+        <activity android:name=".Activities.HomePages.VerificationScreen" />
+        <activity android:name=".Activities.HomePages.Register" />
+        <activity android:name=".Activities.HomePages.Login" />
+        <activity android:name=".Activities.HomePages.HomePage" />
+        <activity android:name=".Activities.VideoPlayerActivity" />
+        <activity android:name=".Activities.MusicPlayerActivity" />
+        <activity android:name=".Activities.FloatingBtn" />
+        <activity android:name=".Activities.BottomNavigationHideOnScroll" />
+        <activity android:name=".Activities.FullScreenAdActivity" />
+        <activity android:name=".Activities.ExpandebleActivity" />
+        <activity android:name=".Activities.RecyclerViews.GridRecyclerViewWithThreeCol" />
+        <activity android:name=".Activities.DateTimePicker" />
+        <activity android:name=".Activities.AlertDialog" />
+        <activity android:name=".Activities.RatingActivity" />
+        <activity android:name=".Activities.RecyclerViews.SwipeToDismissRecyclerView" />
+        <activity android:name=".Activities.RecyclerViews.ScrollToTopRecyclerView" />
+        <activity android:name=".Activities.RecyclerViews.MultipleSelectionRecyclerView" />
+        <activity android:name=".Activities.RecyclerViews.SectionRecyclerView" />
+        <activity android:name=".Activities.RecyclerViews.ExpandableRecyclerView" />
+        <activity android:name=".Activities.RecyclerViews.BasicRecylerViews" />
+        <activity android:name=".Activities.CustomRecyclerView" />
+        <activity android:name=".Activities.ScrollViewActivity" />
+        <activity android:name=".Activities.CalclulatorActivity" />
+        <activity android:name=".Activities.ToolbarSearchViewActivity" />
+        <activity android:name=".Activities.BasicSearchViewActivity" />
+        <activity android:name=".Activities.SearchViewActivity" />
+        <activity android:name=".Activities.SpinnerActivity" />
+        <activity android:name=".Activities.AutoCompleteEditviewActivity" />
+        <activity android:name=".Activities.WebviewActivity" />
+        <activity android:name=".Activities.NavigationDrawerActivity" />
+        <activity android:name=".Activities.RecyclerViews.GridRecyclerWithTwoCol" />
+        <activity android:name=".Activities.TabLayoutWithIcon" />
+        <activity android:name=".Activities.CustomColorBottomNavigation" />
+        <activity android:name=".Activities.DetailsActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7783850843188004~1039553340" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+    </application>
+
+</manifest>
