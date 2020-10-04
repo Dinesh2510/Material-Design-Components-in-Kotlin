@@ -6,6 +6,7 @@
 ------------
 #### This is a demo app designed with the fascinating and modern Google's Material Design 2. It was created using Androidx Libraries and Material Components. It covers many material design components to show how to implement material design 2 in apps.
 
+## Title & ScreenShots
 1. Bottom Navigation
 2. Tab Layout
 3. Grid RecyclerView
@@ -29,14 +30,6 @@
 20. Music & Video Player
 21. RecyclerView Using Volly API
 
-### Good for
-
-- Mobile cross-platform 
-- Native 
-- Data science 
-- Server-side 
-- Web development 
-- Android 
 ###  Why Kotlin?
 **1. Concise**
 -Drastically reduce the amount of boilerplate code
