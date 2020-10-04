@@ -4,6 +4,30 @@
 #### Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin's standard library depends on the Java Class Library, but type inference allows its syntax to be more concise.
 
 ------------
+#### This is a demo app designed with the fascinating and modern Google's Material Design 2. It was created using Androidx Libraries and Material Components. It covers many material design components to show how to implement material design 2 in apps.
+
+1. Bottom Navigation
+2. Tab Layout
+3. Grid RecyclerView
+3. Linear RecyclerView
+4. Navigation Drawer (Both Side)
+5. WebView
+6. AutoComplete TextView
+7. MultiAutoComplete TextView  (Eg. apple,bat,cat,dog)
+8. Spinner
+9. Bottom Sheet
+10. SearchView (Toolbar SearchView and Basic SearchView)
+11. Calculator App
+12. Rating
+13. Dialog Box
+14. Date Time Picker
+15. AdMob Full Screen Ad
+16. Collapsed View
+17. Horizontal ScrollView 
+18. Bottom Navigation Hide On Scroll
+19. Login, Register, Verification Screen, Home Page
+20. Music & Video Player
+21. RecyclerView Using Volly API
 
 ### Good for
 
